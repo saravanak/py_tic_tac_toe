@@ -48,6 +48,10 @@ class TicTacToeRenderer(object):
             current_offset -= 1
         elif move_direction == curses.KEY_RIGHT:
             current_offset += 1
+        elif move_direction == curses.KEY_UP:
+            current_offset -= SIZE
+        elif move_direction == curses.KEY_DOWN:
+            current_offset += SIZE
         else:
             return
 
